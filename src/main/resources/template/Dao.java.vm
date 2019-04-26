@@ -1,0 +1,79 @@
+package ${package}.dao.${className}.api;
+
+import ${package}.model.db.${className}Model;
+import java.util.List;
+
+/**
+ * Project Name:${projectName}
+ * File Name:I${className}Dao
+ * Package Name:${package}.dao.${className}.api
+ * Date:${datetime}
+ * Author:${author}
+ * Description:${comments}
+ * Copyright (c) 2019, 重庆云凯科技有限公司 All Rights Reserved.
+ */
+public interface I${className}Dao {
+    /**
+    * #1 添加一个model
+    *
+    * @return 添加个数
+    * @throws Exception 异常
+    */
+    Object add() throws Exception;
+
+    /**
+     * #2 删除一个model
+     *
+     * @return 删除个数
+     * @throws Exception 异常
+     */
+    Object delete() throws Exception;
+
+    /**
+     * #3 删除多个model
+     *
+     * @return 删除个数
+     * @throws Exception 异常
+     */
+    Object deleteMany() throws Exception;
+
+    /**
+     * #4 更新一个model
+     *
+     * @return 更新个数
+     * @throws Exception 异常
+     */
+    Object update() throws Exception;
+
+    /**
+     * #5 更新多个model
+     *
+     * @return 更新个数
+     * @throws Exception 异常
+     */
+    Object updateMany() throws Exception;
+
+    /**
+     * #6 查询一个model
+     *
+     * @return 查询结果
+     * @throws Exception 异常
+     */
+    SmsNotifyModel findOne() throws Exception;
+
+    /**
+     * #7 分页查询
+     *
+     * @return 查询结果
+     * @throws Exception 异常
+     */
+    List<SmsNotifyModel> findPage(int pageIndex, int pageSize) throws Exception;
+
+    /**
+     * #8 查询结果总数
+     *
+     * @return 查询结果总数
+     * @throws Exception 异常
+     */
+    long getTotalCount() throws Exception;
+}
